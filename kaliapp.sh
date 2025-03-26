@@ -1,7 +1,10 @@
+echo PATCH AND UPDATE
 sudo apt-get clean
 sudo apt update && sudo apt upgrade
 sudo apt-get dist-upgrade
 
+
+echo INSTALL PACKAGES
 sudo apt-get install –y aha
 sudo apt-get install –y amap
 sudo apt-get install –y bluetooth bluez bluez-tools rfkill
@@ -82,3 +85,78 @@ sudo apt-get install -y yersinia
 sudo apt-get install -y wine32:i386
 sudo apt-get install -y wine
 sudo apt-get install -y tightvncserver
+
+echo GIT INSTALLS
+cd /$HOME
+echo ALL GIT INSTALLS GO UNDER $HOME/git
+mkdir git
+cd git
+git clone https://github.com/nitefood/asn
+
+git clone https://github.com/theevilbit/ciscot7
+
+https://github.com/supertylerc/decrypt
+cd decrypt
+bundle install
+rake install
+cd ..
+
+git clone https://github.com/Tib3rius/AutoRecon
+
+git clone https://github.com/kamorin/DHCPig
+
+git clone https://github.com/commonexploits/dtpscan.git
+cd dtpscan/
+chmod +x dtpscan.sh
+cd ..
+
+git clone https://github.com/initstring/evil-ssdp.git
+
+wget --inet4-only http://pentestmonkey.net/tools/finger-user-enum/finger-user-enum-1.0.tar.gz
+tar -xvf finger-user-enum-1.0.tar.gz
+git clone https://github.com/r-richter/hyenae-ng
+cd hyenae-ng
+make all
+cd ..
+
+wget https://github.com/ropnop/kerbrute/releases/tag/v1.0.3 -O kerbrute
+chmod +x kerbrute
+
+git clone https://github.com/m8sec/nullinux
+
+git clone https://github.com/sensepost/routopsy
+
+git clone https://github.com/santoru/shcheck
+cd shcheck
+chmod +x shcheck.py
+cd ..
+
+git clone https://github.com/gkbrk/slowloris.git
+
+sudo apt install python3
+sudo apt install python3-pip
+sudo python3 -m pip install pwntools
+sudo git clone https://github.com/Hellsender01/vsftpd_2.3.4_Exploit.git
+cd vsftpd_2.3.4_Exploit/
+sudo chmod +x exploit.py
+
+wget --inet4-only http://gchq.github.io/CyberChef/CyberChef_v10.19.2.zip
+
+git clone https://github.com/EnableSecurity/tftptheft
+
+sudo gem install haiti-hash
+
+sudo gzip -d  /usr/share/wordlists/rockyou.txt.gz
+
+sudo apt install openssh-server
+sudo systemctl start ssh
+sudo systemctl enable ssh
+
+sudo update-rc.d postgresql enable
+sudo service postgresql start
+sudo msfdb init
+
+
+
+
+
