@@ -140,8 +140,6 @@ sudo git clone https://github.com/Hellsender01/vsftpd_2.3.4_Exploit.git
 cd vsftpd_2.3.4_Exploit/
 sudo chmod +x exploit.py
 
-wget --inet4-only http://gchq.github.io/CyberChef/CyberChef_v10.19.2.zip
-
 git clone https://github.com/EnableSecurity/tftptheft
 
 sudo gem install haiti-hash
